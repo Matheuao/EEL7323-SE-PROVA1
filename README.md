@@ -56,5 +56,5 @@ Para compilar o código no ambiente desktop, siga os comandos abaixo:
 No Linux, execute os seguintes comandos no terminal:
 
 ```bash
-g++ -Iinclude -o my_program main.cpp src/*.cpp
-./my_program
+g++ -Iinclude -o programa main.cpp src/*.cpp
+
