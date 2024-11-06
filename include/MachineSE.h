@@ -2,6 +2,7 @@
 #define MACHINEPC_H
 #include <iostream>
 #include <sstream>
+#include <string>
 #include <stdlib.h>
 #include <ctime>
 #include <time.h>

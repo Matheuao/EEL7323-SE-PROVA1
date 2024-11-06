@@ -96,6 +96,7 @@ date machineSE :: data_hora(){
 
     int counter = 0;
     clock_t lastIncrement = 0;
+    //string mes,dia,ano,h,m,s,resultado;
 
     clock_t inicio, fim;
     inicio = clock();
@@ -120,16 +121,21 @@ date machineSE :: data_hora(){
     ret_date.h = timeinfo->tm_hour;
     ret_date.m = timeinfo->tm_min;
     ret_date.s = timeinfo->tm_sec;
-
-    // escrever esses dados no oled
     
-    /* teste da lógica usando iostream
-    cout << Data: " << data.dia << "/" 
-            << data.mes << "/" << data.ano << " " 
-            << data.h << ":" << data.m << ":" << data.s << endl;
-    
-    */
-
+   	std::string mes, dia, ano, h, m, s, resultado;
+        
+        // Atribuindo os valores às variáveis já declaradas
+        mes = std::to_string(ret_date.mes);
+        dia = std::to_string(ret_date.dia);
+        ano = std::to_string(ret_date.ano);
+        h = std::to_string(ret_date.h);
+        m = std::to_string(ret_date.m);
+        s = std::to_string(ret_date.s);
+        
+        
+        resultado = ano + "-" + mes + "-" + dia + " " + h + ":" + m + ":" + s;
+	
+	//escrever resultado com a função printGeneric(str1,1);
 
     return ret_date;
 }
@@ -145,6 +151,8 @@ void machineSE :: run(){
     date date_log;
     log_data log;
     int i;
+
+    //oledInit();
 
     while(1){
 
