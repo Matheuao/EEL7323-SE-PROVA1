@@ -19,6 +19,28 @@ A máquina de refrigerantes simula o funcionamento básico de uma vending machin
 - **Operação em Desktop**: Controle por teclado e exibição de saídas no console.
 - **Operação em Sistema Embarcado**: Utilização de botões e switches como entrada e LEDs como saída.
 
+## Interação de Entrada/Saída no PC
+
+Para a implementação deste projeto, foi necessário utilizar comandos de teclado no terminal como entrada. Os seguintes comandos podem ser utilizados para interagir com a máquina de refrigerantes:
+
+- **Valores numéricos**: 
+  - 25
+  - 50
+  - 100
+  
+  Esses valores representam as quantias de moedas inseridas na máquina.
+
+- **Comandos de texto**: 
+  - `meet`
+  - `etirps`
+  - `dev`
+  - `log`
+  
+Cada um desses comandos é utilizado para executar uma ação específica na máquina, como selecionar opções ou visualizar o log de operações.
+
+Esses comandos devem ser inseridos diretamente no terminal para simular a interação com a máquina de refrigerantes.
+
+
 ## Estrutura do Projeto
 
 - **src/**: Contém os arquivos `.cpp` com a implementação das classes e funções principais.
