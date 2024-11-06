@@ -12,6 +12,19 @@ Tanto a classe **machinePC** quanto a **machineSE** utilizam os objetos **Log** 
 
 Além disso, o projeto faz uso de dois arquivos utilitários que são empregados em várias partes do código. O primeiro é o **utils.h**, que contém funções de controle de tempo, como o delay. O segundo é o **data_types.h**, que define as estruturas e tipos de dados utilizados na implementação da máquina de refrigerantes.
 
+### Diagrama FSM:
+
+| Current state | Noting | C025 | C050 | C100 | DEV | MEET | ETIRPS |
+|----------|----------|----------|----------|----------|----------|----------|----------|
+| s000  | s000   | s025  | s050  | s100   | s000, dev = 0  | s000, meet = false   | s000, etirps = false   |
+| s025  | s025   | s050   | s075   | s125   | s000, dev = 25   | s025, meet = false   | s025, etirps = false  |
+| s050  | s050  | s075   | s100   | s150   | s000, dev = 50   | s050, meet = false   | s050, etirps = false   |
+| s075  | s075   | s100   | s125  | s150, dev = 25   | s000, dev = 75   | s075, meet = false    | s075, etirps = false   |
+| s100 | s100  | s125   | s150   | s150, dev = 50  |s000, dev = 100   | s100, meet = false    | s100, etirps = false  |
+| s125  | s125   | s150   | s150 dev = 25   | s150, dev = 75   | s000, dev = 125  | s125, meet = false   | s125, etirps = false  |
+| s150  | s150   | s150, dev = 25   | s150 dev = 50   | s150, dev = 100   | s000, dev = 150   | s000, meet = true    | s000, etirps = true  |
+
+
 ## Funcionalidades
 
 A máquina de refrigerantes simula o funcionamento básico de uma vending machine que aceita moedas de diferentes valores e realiza a entrega de produtos. A implementação inclui:
