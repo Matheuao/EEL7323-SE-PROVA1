@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1730892085 source:c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\main.cpp
+	<sstream>
+	"include/FSM.h"
+	"src/FSM.cpp"
+	<iostream>
+	"include/MachinePC.h"
+	"include/Log.h"
+
+1730900914 c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\include\fsm.h
+	"Data_types.h"
+	<iostream>
+
+1730896663 c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\include\data_types.h
+
+1730902684 c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\src\fsm.cpp
+	"../include/FSM.h"
+
+1730897189 c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\include\machinepc.h
+	<iostream>
+	<sstream>
+	<stdlib.h>
+	<ctime>
+	<time.h>
+	"Io.h"
+	"FSM.h"
+	"Data_types.h"
+
+1730896698 c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\include\io.h
+	"Data_types.h"
+
+1730892085 c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\include\log.h
+	"../include/Queue.h"
+	<iostream>
+
+1730892085 c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\include\queue.h
+	<iostream>
+	"Node.h"
+
+1730892085 c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\include\node.h
+	<iostream>
+	"Data_types.h"
+
+1730902684 source:c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\src\fsm.cpp
+	"../include/FSM.h"
+
+1730897090 source:c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\src\log.cpp
+	"../include/Log.h"
+
+1730902708 source:c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\src\machinepc.cpp
+	"../include/MachinePC.h"
+
+1730892085 source:c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\src\node.cpp
+	"../include/Node.h"
+
+1730892085 source:c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\src\queue.cpp
+	"Queue.h"
+
+1730892509 source:c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\src\teste.cpp
+	"teste.h"
+
+1730892509 c:\users\matheus_\desktop\matheus\codeblocks\codeb_prova1\include\teste.h
+
