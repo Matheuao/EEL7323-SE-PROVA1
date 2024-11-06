@@ -1,4 +1,4 @@
-#include "../include/machineSE.h"
+#include "../include/MachineSE.h"
 #include <iostream>
 
 volatile unsigned int *data = (volatile unsigned int *)0x80000a00; // Endereço dos botões e switches

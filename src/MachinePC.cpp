@@ -76,8 +76,8 @@ machine_input machinePC :: process_input(machine_input input){
             } else {
                 cout << "Comando invalido! Use 'dev', 'meet', 'etirps' ou 'ok'." << endl;
                 delay(3);
-                system("cls");
-                //system("clear"); linux
+                //system("cls");
+                system("clear");// linux
             }
         }
 
@@ -130,7 +130,7 @@ date machinePC :: data_hora(){
     ret_date.s = timeinfo->tm_sec;
 
     return ret_date;
-}
+};
 
 //void whrite_log()
 
@@ -148,7 +148,8 @@ void machinePC :: run(){
 
         while(machine_in.ok == false){
 
-            system("cls"); //system("clear"); linux
+            //system("cls"); //windows
+	    system("clear"); //linux
             date_log = data_hora();
 
             for (i=0; i<=6; i++){
